@@ -164,7 +164,7 @@ function checkKeyboard() {
 
   orbPosition.value.clamp(minVec, maxVec);
 
-  if (true && (lightBattery > 0)) {
+  if (keyboard.pressed("space") && (lightBattery > 0)) {
     if (flickerFrames <= 0) {
         // light is more likely to flicker, and flickers for longer on lower battery
         const batteryFactor = 1.0 - lightBattery / 100;

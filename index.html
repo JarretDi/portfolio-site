@@ -1,20 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JD Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JD Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <img src="horror-game/demo.png">
-        <a href="horror-game/horror-game.html">Horror game</a>
+
+  <!-- HERO -->
+  <header>
+    <h1>Jarret Diep</h1>
+    <p>Coop student • Graphics programmer • Game Developer</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I am an undergraduate student at UBC studying Computer Science and Mathematics, with a passion for computer graphics and game development.  
+      I especially enjoy creating engine-level tools for procedural generation.
+    </p>
+  
+    <p>
+      I have experience with C++, JavaScript, Open/WebGL, and the Godot game engine. Currently, I am working on an indie game with a small team while exploring Rust and WebGPU.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+
+    <div class="project">
+        <h3><a href="pumpkin-raymarch/pumpkin-raymarching.html">Perlin and Pumpkins</a> — Implicit Rendering</h3>
+        <p>
+          A fragment-shader-based scene featuring procedurally generated terrain, a day-night lighting cycle, and pumpkins. Use A/D to rotate the camera.
+        </p>
+      
+        <p><em>Tech:</em> WebGL, FBM/Perlin Noise, SDF + Raymarched Implicit Rendering</p>
+      
+        <img src="pumpkin-raymarch/demo.png" alt="Perlin and Pumpkins Screenshot">
     </div>
 
-    <div>
-        <img src="pumpkin-raymarch/demo.png">
-        <a href="pumpkin-raymarch/pumpkin-raymarching.html">Pumpkin raymarching</a>
+    <div class="project">
+        <h3><a href="https://github.com/JarretDi/procedural-map-generator">TileMapGenerator</a> — Procedural Tile Maps (Godot 4, C++)</h3>
+        <p>
+          A procedural tile map generator built as a Godot 4 GDExtension in C++. Implements the Wave Function Collapse algorithm, 
+          generating maps from sample tilemaps with probability-based propagation.
+        </p>
+      
+        <p><em>Tech:</em> Godot 4, C++ (GDExtension), SCons, DSA</p>
+      
+        <div class="image-comparison">
+            <div class="image-block sample">
+              <img src="procedural-map-generator/Sample.png" alt="Sample Tilemap">
+              <p>Sample</p>
+            </div>
+            <div class="arrow">&#8594;</div>
+            <div class="image-block generated">
+              <img src="procedural-map-generator/Result.png" alt="Generated Tilemap">
+              <p>Generated Result</p>
+            </div>
+          </div>
+      </div>
+
+    <div class="project">
+        <h3><a href="horror-game/horror-game.html">Survive the Armadillo</a> — Horror Game</h3>
+        <p>
+          A small survival game where you control a glowing orb hunted by a boxing-glove armadillo.
+          Move with WASD, hold space to use the flashlight.
+        </p>
+
+        <p><em>Tech:</em> WebGL, Three.js, JavaScript </p>
+      
+        <img src="horror-game/demo.png" alt="Armadillo Horror Game Screenshot">
     </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="Links">
+    <h2>Links</h2>
+    <p>Email: <a href="mailto:jarrettcdi@gmail.com">jarrettcdi@gmail.com</a></p>
+    <p>Github: <a href="https://github.com/JarretDi/">JarretDi</a></p>
+  </section>
+
 </body>
 </html>

@@ -43,5 +43,5 @@ My part 2 of the assignment turns the scene into a fully-fledged horror game. Yo
 * Changed orb to use THREE.js builtin position w/ model matrix as doing it with the uniform was causing odd bugs with the camera
 
 ## Sources / References
-* https://learnopengl.com/ - read prior to taking this course. Not directly referenced during this assignment, but learned concepts may have influenced work
+* https://learnopengl.com/
 * ChatGPT - used for syntax, troubleshooting and three.js basics

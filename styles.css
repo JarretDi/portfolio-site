@@ -1,3 +1,132 @@
-img {
-    width: 50%;
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #101010; 
+    color: #eee;          
+    line-height: 1.6;
+}
+
+header {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a1a, #292929);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ff8800;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: #f5f5f5;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    border-left: 5px solid #ff8800;
+    padding-left: 10px;
+    color: #ff8800;
+}
+
+.project {
+    margin-bottom: 40px;
+    background: #181818;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-box {
+    background: #181818;
+    padding: 15px;
+    border-radius: 6px;
+    color: #f5f5f5;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #aaa;
+}
+
+a {
+    color: #ff8800;
+    text-decoration: none;
+}
+
+.image-comparison {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-block {
+    text-align: center;
+}
+
+.image-block img {
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+}
+
+.image-block.sample {
+    flex: 0 0 35%
+}
+
+.image-block.generated {
+    flex: 0 0 55%;
+}
+
+.arrow {
+    font-size: 2rem;
+    text-align: center;
+    color: #ff8800;
+}
+
+#about {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    color: #f5f5f5;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+    border-left: 5px solid #ff8800;
+    padding-left: 10px;
+    color: #ff8800;
+}
+
+#about p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #f5f5f5;
+}
+
+#about strong {
+    color: #ff8800; /* highlight bold items in orange */
 }

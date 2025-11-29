@@ -123,7 +123,7 @@ function setup() {
     rightWall.parent = worldFrame;
     
     // Cast a weak ambient light to make the floor visible.
-    const light = new THREE.AmbientLight(0x999900, 0.1);
+    const light = new THREE.AmbientLight(0x999900, 0.01);
     scene.add(light);
 
     return {

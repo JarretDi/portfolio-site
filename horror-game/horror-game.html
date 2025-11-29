@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survive the Armadillo</title>
+  <style>
+    body {
+      /* Remove the default padding and margin around the canvas */
+      padding: 0;
+      margin: 0;
+      /* Disable scrolling */
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="webglcanvas"></canvas>
+  <div id="battery-container" style="
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 20px;
+    border: 2px solid #555;
+    background-color: #222;
+">
+    <div id="battery-level" style="
+      width: 100%;
+      height: 100%;
+      background-color: #0f0;
+  "></div>
+    </div>
+
+    <div id="timeSurvived" style="position: absolute; top: 20px; right: 20px; 
+     font-size: 32px; color: white;">
+     Time Survived: 0.00s
+    </div>
+  
+    <div id="game-over" style="
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    color: rgb(152, 5, 5);
+    font-family: fantasy;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 20%;
+    z-index: 1000;
+">
+    Game Over
+    <br>
+    You were caught by the Armadillo...
+    </div>
+
+  <script src="js/WebGL.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/OBJLoader.js"></script>
+  <script src="js/SourceLoader.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/KeyboardState.js"></script> <!-- By Jerome Etienne: http://jetienne.com/ -->
+  <script src="js/setup.js"></script>
+  <script src="horror-game.js"></script>
+
+  
+
+</body>
+
+</html>
